@@ -1,0 +1,23 @@
+{
+  "video_pid": 256,
+  "video_pes": 250,
+  "nal_counts": {
+    "9": 250,
+    "6": 255,
+    "7": 5,
+    "8": 5,
+    "25": 232,
+    "5": 5,
+    "1": 245
+  },
+  "decrypted_slices": 232,
+  "input_sha256": "45310829dfd1711d520d5f7b593cfb3242c68f9c06b91f5bc88b0d4e6e4d1313",
+  "output_sha256": "1ec9d2cef3159ae5d30c54fd6e1ca3076cf4b894f0cb8e851210e099466733d9",
+  "native_postprocessed_nals_equal": 765,
+  "retained_nals": 765,
+  "mp4_strict_decode_exit_code": 0,
+  "mp4_strict_decode_stderr_bytes": 0,
+  "video_frames": 250,
+  "aac_frames": 469,
+  "mp4_sha256": "b8ac743aefef44eb41fe8041cc0bd3364bcbb3cedc0334c547cd4cd293f85b14"
+}
