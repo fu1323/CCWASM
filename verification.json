@@ -1,0 +1,80 @@
+{
+  "input_sha256": "5a28a10fa0e2154b91f4e93a357f21e94cc8f373bd4d3f5828f385ef4ea56584",
+  "output_ts_sha256": "146eda5ab6ce0ac4aab5f595c58d20b422399d67b4812e8495f0574d4e81cab7",
+  "input_bytes": 666836,
+  "output_ts_bytes": 666836,
+  "ts_packets": 3547,
+  "video_pid": 256,
+  "video_pes": 100,
+  "mode": 1,
+  "nal_counts": {
+    "1": 98,
+    "5": 2,
+    "7": 2,
+    "8": 2,
+    "9": 100
+  },
+  "decrypted_slices": 100,
+  "tea_blocks": 6724,
+  "outer_escape_bytes_removed": 45,
+  "verification": "ffmpeg_full_decode_clean",
+  "output_mp4_sha256": "db2c0c74f35714cbbb36068818f0f9040b122762c8de38641d658d673b93ce88",
+  "nonvideo_packets_unchanged": true,
+  "pcr_fields_unchanged": true,
+  "input_files": {
+    "live.worker.js": {
+      "bytes": 4871689,
+      "sha256": "6dd48cc73249fe32cbc588d45e172e167d1310965592952b1f4970bd23712738"
+    },
+    "liveplayer_controls.js": {
+      "bytes": 1995762,
+      "sha256": "5d2194022dc6b59da24cdae1b95af30df436a64a10e157ee6e19137ac90fe94b"
+    },
+    "out.bin": {
+      "bytes": 92626,
+      "sha256": "f94a1562f39764f8c538ec26e1259579f179d77dfc027010b64526a7a2157a69"
+    },
+    "cdrmldcctv13_1_1800-1792595050(2).bin": {
+      "bytes": 666836,
+      "sha256": "5a28a10fa0e2154b91f4e93a357f21e94cc8f373bd4d3f5828f385ef4ea56584"
+    }
+  },
+  "original_wasm_differential": {
+    "nal_count": 204,
+    "slice_count": 100,
+    "mismatches": 0,
+    "identifier": "cdrmldcctv13_1",
+    "identifier_is_experimental": true,
+    "compares": "WASM intermediate output including name-derived XOR"
+  },
+  "negative_checks": {
+    "truncated_packet": {
+      "rejected": true,
+      "message": "Input must be a nonempty sequence of 188-byte TS packets"
+    },
+    "unsupported_mode_0": {
+      "rejected": true,
+      "message": "Unsupported SPS encryption mode 0; only mode 1 was verified"
+    }
+  },
+  "player_js_postprocess_vectors": {
+    "tested": 3,
+    "matched": 3,
+    "labels": [
+      "first_idr_0x65",
+      "small_reference_slice_0x41",
+      "small_nonreference_slice_0x01"
+    ],
+    "source": "verify_player_layer.cjs executing original Qu"
+  },
+  "inverse_encryption_check": {
+    "slice_count": 100,
+    "mismatches": [],
+    "note": "Independent inverse transform matches source slices; not server source code."
+  },
+  "emterpreter": {
+    "chunks": 153,
+    "bytes": 1558792,
+    "sha256": "3a9b7c7fb31ec14e7353d1fcd7705bda167892eb7d45056ea4fa3cf0983105ed"
+  }
+}
